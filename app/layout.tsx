@@ -10,9 +10,8 @@ const _geist = Geist({ subsets: ["latin"] })
 const _geistMono = Geist_Mono({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Community Health Initiative",
-  description: "Dedicated to blood donation, community activities, and health awareness",
-  generator: "v0.app",
+  title: "Sreepur Sporting Club",
+  description: "One team, one mission. Empowering humanity for a brighter tomorrow!",
   icons: {
     icon: [
       {

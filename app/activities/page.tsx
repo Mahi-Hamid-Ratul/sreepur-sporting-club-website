@@ -2,8 +2,8 @@ import type { Metadata } from "next"
 import { ActivityCard } from "@/components/activity-card"
 
 export const metadata: Metadata = {
-  title: "Activities | Community Health Initiative",
-  description: "Browse our community activities and health awareness programs",
+  title: "Sreepur Sporting Club",
+  description: "One team, one mission. Empowering humanity for a brighter tomorrow!",
 }
 
 const activities = [

@@ -3,8 +3,8 @@ import { BloodDonorCard } from "@/components/blood-donor-card"
 import { BloodSearchForm } from "@/components/blood-search-form"
 
 export const metadata: Metadata = {
-  title: "Blood Donor Directory | Community Health Initiative",
-  description: "Find registered blood donors in our community network",
+  title: "Sreepur Sporting Club",
+  description: "One team, one mission. Empowering humanity for a brighter tomorrow!",
 }
 
 const bloodDonors = [

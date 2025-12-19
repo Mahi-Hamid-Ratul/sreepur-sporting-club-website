@@ -2,8 +2,8 @@ import type { Metadata } from "next"
 import { ContactInfo } from "@/components/contact-info"
 
 export const metadata: Metadata = {
-  title: "Contact Us | Community Health Initiative",
-  description: "Get in touch with us for any inquiries or support",
+  title: "Sreepur Sporting Club",
+  description: "One team, one mission. Empowering humanity for a brighter tomorrow!",
 }
 
 export default function ContactPage() {
