@@ -90,4 +90,11 @@ export const teamMembers = [
     image: "/ashraful-islam-limon.webp",
     memberType: "Panel Member",
   },
+  {
+    id: 14,
+    name: "Saiful Islam Kiron",
+    role: "Former Chairman",
+    image: "/placeholder-user.jpg",
+    memberType: "Advisor",
+  },
 ]
