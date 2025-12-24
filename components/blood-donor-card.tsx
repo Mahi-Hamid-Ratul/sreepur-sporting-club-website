@@ -8,6 +8,7 @@ interface BloodDonor {
   bloodType: string
   age: number
   phone: string
+  location: string
   available: boolean
 }
 
@@ -32,6 +33,9 @@ export function BloodDonorCard({ donor }: { donor: BloodDonor }) {
       </CardHeader>
       <CardContent className="space-y-4">
         <div className="space-y-2">
+          <p className="text-sm text-muted-foreground">
+            Location: {donor.location}
+          </p>
           <div className="flex items-center gap-2">
             <Phone size={16} className="text-primary" />
             <a href={`tel:${donor.phone}`} className="text-sm text-primary hover:underline">

@@ -80,7 +80,7 @@ export const teamMembers = [
     id: 12,
     name: "Afran Khan Shakil",
     role: "Deputy Organizational Editor",
-    image: "/placeholder-user.jpg",
+    image: "/afran-shakil.webp",
     memberType: "Panel Member",
   },
   {
