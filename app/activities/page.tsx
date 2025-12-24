@@ -1,45 +1,11 @@
 import type { Metadata } from "next"
 import { ActivityCard } from "@/components/activity-card"
+import { activities } from "@/lib/activities-data"
 
 export const metadata: Metadata = {
-  title: "Sreepur Sporting Club",
+  title: "Activities | Sreepur Sporting Club",
   description: "One team, one mission. Empowering humanity for a brighter tomorrow!",
 }
-
-const activities = [
-  {
-    id: 1,
-    title: "Blood Donation Camp",
-    date: "Every Saturday",
-    location: "Community Center Hall",
-    description: "Join us for regular blood donation camps. All healthy individuals welcome to donate and save lives.",
-    image: "/blood-donation-camp.jpg",
-  },
-  {
-    id: 2,
-    title: "Health Awareness Seminar",
-    date: "First Sunday of Month",
-    location: "Central Library",
-    description: "Learn about nutrition, fitness, and preventive healthcare from our expert speakers.",
-    image: "/health-awareness-seminar.jpg",
-  },
-  {
-    id: 3,
-    title: "Community Wellness Walk",
-    date: "Every Wednesday",
-    location: "City Park",
-    description: "Join our morning wellness walk. Free fitness activity for all age groups.",
-    image: "/community-wellness-walk.jpg",
-  },
-  {
-    id: 4,
-    title: "Medical Camp for Underprivileged",
-    date: "Third Saturday",
-    location: "Local NGO Office",
-    description: "Free health checkups and medical consultations for those in need.",
-    image: "/medical-camp.jpg",
-  },
-]
 
 export default function ActivitiesPage() {
   return (

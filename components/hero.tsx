@@ -11,7 +11,7 @@ export function Hero() {
       <div className="absolute inset-0">
         <Image
           src={heroImageUrl || "/placeholder.svg"}
-          alt="Community Health Initiative Banner"
+          alt="Sreepur Sporting Club"
           fill
           className="object-cover brightness-70"
           priority
@@ -21,10 +21,13 @@ export function Hero() {
       {/* Content Overlay */}
       <div className="relative z-10 bg-gradient-to-r from-primary/95 to-primary/70 h-full flex items-center">
         <div className="container mx-auto px-4 sm:px-6">
-          <div className="max-w-3xl">
+          <div className="max-w-4xl">
             <h1 className="text-5xl md:text-6xl font-bold mb-6 text-white">Sreepur Sporting Club</h1>
-            <p className="text-xl md:text-2xl mb-8 opacity-95 text-white">
+            <p className="text-xl md:text-2xl mb-5 opacity-95 text-white">
               One team, one mission - Empowering humanity for a brighter tomorrow!
+            </p>
+            <p className="inline-block text-xs leading-none px-3 py-[7px] bg-gray-400 text-black rounded-full mb-5">
+              A Non-Profit and Non-Political Organization
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link href="/blood-donors">

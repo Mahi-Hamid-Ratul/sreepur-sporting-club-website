@@ -3,23 +3,7 @@
 import { useState } from "react"
 import { TeamMemberCard } from "@/components/team-member-card"
 import { Button } from "@/components/ui/button"
-
-const teamMembers = [
-  {
-    id: 1,
-    name: "MD Mahi Hamid Ratul",
-    role: "Technology Editor",
-    image: "/ratul.webp",
-    memberType: "Panel Member",
-  },
-  {
-    id: 2,
-    name: "MD Saiful Islam Kiron",
-    role: "Former Chairman",
-    image: "/kiron-advisor.webp",
-    memberType: "Advisor",
-  },
-]
+import { teamMembers } from "@/lib/team-data"
 
 export default function TeamPage() {
   const [activeFilter, setActiveFilter] = useState<string | null>(null)

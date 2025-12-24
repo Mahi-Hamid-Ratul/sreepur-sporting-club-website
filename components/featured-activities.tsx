@@ -5,18 +5,18 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 export function FeaturedActivities() {
   const activities = [
     {
-      title: "Blood Donation Camps",
-      description: "Regular blood donation camps held every Saturday at community centers.",
-      icon: "🩸",
-    },
-    {
       title: "Wellbeing in Sport",
       description: "Workshops supporting wellbeing through sport nutrition and fitness.",
       icon: "⚽",
     },
     {
-      title: "Community Support",
-      description: "Medical camps and free consultations for underprivileged communities.",
+      title: "Blood Donation Camps",
+      description: "We organize blood donation and blood group testing camps.",
+      icon: "🩸",
+    },
+    {
+      title: "Social Work",
+      description: "We stand beside the needy with financial help, shelter, and disaster rescue support.",
       icon: "🤝",
     },
   ]

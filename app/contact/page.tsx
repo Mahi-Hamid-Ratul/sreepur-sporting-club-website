@@ -2,7 +2,7 @@ import type { Metadata } from "next"
 import { ContactInfo } from "@/components/contact-info"
 
 export const metadata: Metadata = {
-  title: "Sreepur Sporting Club",
+  title: "Contact | Sreepur Sporting Club",
   description: "One team, one mission. Empowering humanity for a brighter tomorrow!",
 }
 

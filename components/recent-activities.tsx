@@ -1,24 +1,9 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
+import { activities } from "@/lib/activities-data"
 
 export function RecentActivities() {
-  const activities = [
-    {
-      id: 1,
-      title: "Winter Blood Donation Camp",
-      date: "December 10, 2024",
-      location: "City Community Center",
-      description: "Join us for our winter blood donation drive. Every drop counts!",
-      type: "Blood Donation",
-    },
-    {
-      id: 2,
-      title: "Health & Wellness Seminar",
-      date: "December 15, 2024",
-      location: "Online & Offline",
-      description: "Learn about heart health and preventive care from leading medical experts.",
-      type: "Awareness",
-    },
-  ]
+  // Get the 2 most recent activities from the shared activities data
+  const recentActivities = activities.slice(0, 2)
 
   return (
     <section className="py-16 md:py-24 bg-accent/5">
@@ -31,7 +16,7 @@ export function RecentActivities() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {activities.map((activity) => (
+          {recentActivities.map((activity) => (
             <Card key={activity.id} className="border-l-4 border-l-primary hover:shadow-lg transition-shadow">
               <CardHeader>
                 <div className="flex items-start justify-between mb-2">
