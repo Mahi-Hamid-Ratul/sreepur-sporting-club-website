@@ -52,7 +52,7 @@ export function ContactInfo() {
         </CardHeader>
         <CardContent>
           <p className="text-sm">MD Mahi Hamid Ratul</p>
-          <p className="text-xs text-muted-foreground mt-1">Technology Editor</p>
+          <p className="text-xs text-muted-foreground mt-1">Technical Advisor</p>
         </CardContent>
       </Card>
     </div>

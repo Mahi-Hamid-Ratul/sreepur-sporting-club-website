@@ -9,7 +9,7 @@ export const teamMembers = [
   {
     id: 2,
     name: "MD Mahi Hamid Ratul",
-    role: "Technology Editor",
+    role: "Technical Advisor",
     image: "/ratul.webp",
     memberType: "Panel Member",
   },
