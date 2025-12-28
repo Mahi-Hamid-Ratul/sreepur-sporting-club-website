@@ -97,4 +97,11 @@ export const teamMembers = [
     image: "/placeholder-user.jpg",
     memberType: "Advisor",
   },
+  {
+    id: 15,
+    name: "Shakil Mehedi Tushar",
+    role: "Electrical Engineer",
+    image: "/shakil-mehedi-tushar.webp",
+    memberType: "Advisor",
+  },
 ]
