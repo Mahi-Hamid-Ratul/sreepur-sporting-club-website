@@ -22,7 +22,7 @@ export function TrustedBy() {
   ]
 
   return (
-    <section className="py-16 md:py-24 bg-card overflow-hidden">
+    <section className="py-10 md:py-16 bg-accent/5 overflow-hidden">
       <div className="container mx-auto px-6">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold">

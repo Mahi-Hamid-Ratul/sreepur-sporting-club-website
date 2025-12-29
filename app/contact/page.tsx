@@ -1,10 +1,6 @@
-import type { Metadata } from "next"
-import { ContactInfo } from "@/components/contact-info"
+"use client"
 
-export const metadata: Metadata = {
-  title: "Contact | Sreepur Sporting Club",
-  description: "One team, one mission. Empowering humanity for a brighter tomorrow!",
-}
+import { ContactInfo } from "@/components/contact-info"
 
 export default function ContactPage() {
   return (

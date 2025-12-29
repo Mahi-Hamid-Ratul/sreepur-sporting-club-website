@@ -1,5 +1,3 @@
-import Link from "next/link"
-import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 
 export function FeaturedActivities() {
@@ -31,7 +29,7 @@ export function FeaturedActivities() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {activities.map((activity, index) => (
             <Card key={index}>
               <CardHeader>
@@ -43,14 +41,6 @@ export function FeaturedActivities() {
               </CardContent>
             </Card>
           ))}
-        </div>
-
-        <div className="text-center">
-          <Link href="/activities">
-            <Button size="lg" className="bg-primary hover:bg-primary/90">
-              View All Activities
-            </Button>
-          </Link>
         </div>
       </div>
     </section>

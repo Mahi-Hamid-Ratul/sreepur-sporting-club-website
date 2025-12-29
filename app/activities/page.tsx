@@ -1,11 +1,7 @@
-import type { Metadata } from "next"
+"use client"
+
 import { ActivityCard } from "@/components/activity-card"
 import { activities } from "@/lib/activities-data"
-
-export const metadata: Metadata = {
-  title: "Activities | Sreepur Sporting Club",
-  description: "One team, one mission. Empowering humanity for a brighter tomorrow!",
-}
 
 export default function ActivitiesPage() {
   return (

@@ -1,3 +1,5 @@
+import Link from "next/link"
+import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { activities } from "@/lib/activities-data"
 
@@ -15,7 +17,7 @@ export function RecentActivities() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
           {recentActivities.map((activity) => (
             <Card key={activity.id} className="border-l-4 border-l-primary hover:shadow-lg transition-shadow">
               <CardHeader>
@@ -36,6 +38,13 @@ export function RecentActivities() {
               </CardContent>
             </Card>
           ))}
+        </div>
+        <div className="text-center">
+          <Link href="/activities">
+            <Button size="lg" className="bg-primary hover:bg-primary/90">
+              View All Activities
+            </Button>
+          </Link>
         </div>
       </div>
     </section>

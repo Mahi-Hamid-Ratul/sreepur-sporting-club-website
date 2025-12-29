@@ -104,4 +104,11 @@ export const teamMembers = [
     image: "/shakil-mehedi-tushar.webp",
     memberType: "Advisor",
   },
+  {
+    id: 16,
+    name: "Ali Hossain Salman",
+    role: "",
+    image: "/placeholder-user.jpg",
+    memberType: "General Member",
+  },
 ]
