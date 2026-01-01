@@ -27,7 +27,7 @@ export function BloodSearchForm({ onSearch }: Props) {
       <CardContent className="p-6">
         <div className="flex flex-col sm:flex-row gap-4">
           <Input
-            placeholder="Search by name or phone..."
+            placeholder="Search by name or Location..."
             value={searchText}
             onChange={(e) => setSearchText(e.target.value)}
             className="flex-1"
@@ -35,7 +35,7 @@ export function BloodSearchForm({ onSearch }: Props) {
 
           <Select value={bloodType} onValueChange={setBloodType}>
             <SelectTrigger className="w-full sm:w-[180px]">
-              <SelectValue placeholder="All Blood Types" />
+              <SelectValue placeholder="Select Blood Group" />
             </SelectTrigger>
             <SelectContent>
               {bloodTypes.map((type) => (

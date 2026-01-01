@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { Mail, Phone, MapPin } from "lucide-react"
+import { Mail, Phone, MapPin, Facebook } from "lucide-react"
 
 export function Footer() {
   return (
@@ -56,7 +56,13 @@ export function Footer() {
             <h3 className="font-bold text-lg mb-4">Follow Us</h3>
             <ul className="space-y-2 text-sm">
               <li>
-                <a href="https://www.facebook.com/profile.php?id=100069484984933&sk=about" className="hover:underline">
+                <a
+                  href="https://www.facebook.com/profile.php?id=100069484984933&sk=about"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 hover:underline"
+                >
+                  <Facebook size={16} />
                   Facebook
                 </a>
               </li>

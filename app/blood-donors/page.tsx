@@ -140,6 +140,12 @@ export default function BloodDonorsPage() {
   return (
     <main className="min-h-screen bg-background py-12">
       <div className="container mx-auto px-4">
+        <div className="mb-12">
+          <h1 className="text-4xl md:text-5xl font-bold text-primary mb-4">Blood Donors</h1>
+          <p className="text-lg text-muted-foreground max-w-2xl">
+            Meet the heroes who step forward when blood is needed most.
+          </p>
+        </div>
         <BloodSearchForm onSearch={handleSearch} />
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
