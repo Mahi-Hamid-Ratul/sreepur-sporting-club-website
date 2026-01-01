@@ -7,17 +7,22 @@ export function TrustedBy() {
     {
       id: 1,
       name: "As Sunnah Foundation",
-      image: "/Seal_of_As-Sunnah_Foundation.webp",
+      image: "/trusted-by-logo/Seal_of_As-Sunnah_Foundation.webp",
     },
     {
       id: 2,
       name: "Priyo Noakhali",
-      image: "/priyo-noakhali-logo.webp",
+      image: "/trusted-by-logo/priyo-noakhali-logo.webp",
     },
     {
       id: 3,
       name: "Ash Shifa",
-      image: "/ash-shifa-roktodan-kendro.webp",
+      image: "/trusted-by-logo/ash-shifa-roktodan-kendro.webp",
+    },
+    {
+      id: 4,
+      name: "হাফেজ্জী হুজুর রহঃ সেবা ফাউন্ডেশন",
+      image: "/trusted-by-logo/hafezi-hujur-foundation.webp",
     },
   ]
 
