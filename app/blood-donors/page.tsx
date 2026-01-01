@@ -59,25 +59,83 @@ const bloodDonors = [
     location: "New Market, Dhaka",
     available: true,
   },
+  
+  {
+    id: 7,
+    name: "Shahadat Mehedi Juine",
+    bloodType: "A+",
+    age: 35,
+    phone: "+88 01726772434",
+    location: "Sreepur, Chatkhil, Noakhali",
+    available: true,
+  },
+  {
+    id: 8,
+    name: "Redowan Hossain",
+    bloodType: "A+",
+    age: 30,
+    phone: "+88 01919404494",
+    location: "Omarpur, Chatkhil Noakhali",
+    available: true,
+  },
+  {
+    id: 9,
+    name: "Habib Ullah",
+    bloodType: "B+",
+    age: 24,
+    phone: "+88 01612162322",
+    location: "Sreepur, Chatkhil, Noakhali",
+    available: true,
+  },
+  {
+    id: 10,
+    name: "Ashraf Hasan",
+    bloodType: "A-",
+    age: 30,
+    phone: "+88 01842260928",
+    location: "Khilpara, Chatkhil, Noakhali",
+    available: true,
+  },
+  {
+    id: 11,
+    name: "Md Nazim Uddin",
+    bloodType: "O+",
+    age: 21,
+    phone: "+88 01838357437",
+    location: "Darussalam, Kallayanpur, Dhaka",
+    available: true,
+  },
+  {
+    id: 12,
+    name: "Mohammad Tarek",
+    bloodType: "A+",
+    age: 19,
+    phone: "+88 01850360108",
+    location: "Ashuliya, Savar, Dhaka",
+    available: true,
+  },
 ]
 
 export default function BloodDonorsPage() {
   const [filteredDonors, setFilteredDonors] = useState(bloodDonors)
 
   const handleSearch = (searchText: string, bloodType: string) => {
-    const result = bloodDonors.filter((donor) => {
-      const matchesText =
-        donor.name.toLowerCase().includes(searchText.toLowerCase()) ||
-        donor.phone.includes(searchText)
+  const result = bloodDonors.filter((donor) => {
+    const text = searchText.toLowerCase()
 
-      const matchesBlood =
-        bloodType === "" || donor.bloodType === bloodType
+    const matchesText =
+      donor.name.toLowerCase().includes(text) ||
+      donor.phone.includes(searchText) ||
+      donor.location.toLowerCase().includes(text)
 
-      return matchesText && matchesBlood
-    })
+    const matchesBlood =
+      bloodType === "" || donor.bloodType === bloodType
 
-    setFilteredDonors(result)
-  }
+    return matchesText && matchesBlood
+  })
+
+  setFilteredDonors(result)
+}
 
   return (
     <main className="min-h-screen bg-background py-12">
